@@ -2,9 +2,14 @@
   "name": "review-code",
   "displayName": "review-code",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.73.0"
+  },
+  "icon": "logo128.png",
+  "publisher": "hritik2002",
+  "repository": {
+    "url": "https://github.com/hritik2002/review-code"
   },
   "categories": [
     "Other"
@@ -30,7 +35,7 @@
     "@types/glob": "^8.0.1",
     "@types/mocha": "^10.0.1",
     "@types/node": "16.x",
-    "@types/vscode": "^1.75.0",
+    "@types/vscode": "^1.73.0",
     "@vscode/test-electron": "^2.2.2",
     "eslint": "^8.33.0",
     "glob": "^8.1.0",

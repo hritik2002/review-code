@@ -43,7 +43,6 @@ async function formatCode(text, editor, selection, selectedTextDecorationType) {
   })
     .then((response) => {
       const formattedCode = response.data.choices[0].text.trim();
-      console.log(response.data.choices);
 
       return formattedCode;
     })
@@ -67,6 +66,10 @@ function activate(context) {
       const editor = vscode.window.activeTextEditor;
       const selection = editor.selection;
       const text = editor.document.getText(selection);
+
+      if (text.trim().length === 0) {
+        return;
+      }
 
       // call open ai and get the correct format of that code with better readability
       // const formattedCode = await formatCode(text);
