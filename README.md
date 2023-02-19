@@ -1,6 +1,10 @@
 # review-my-code
 VScode plugin that reviews our code and helps us improve with the naming convention and best practices, along with some tips on code improvements.
 
+
+<img width="844" alt="review-code-vscode" src="https://user-images.githubusercontent.com/72138429/219942602-75b61d11-1b96-4ac6-a30a-8090f86e0b5c.png">
+
+
 ## How to use this plugin?
 
 - Install the plugin.
