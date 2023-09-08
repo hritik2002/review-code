@@ -3,6 +3,8 @@
 const vscode = require("vscode");
 const axios = require("axios");
 
+const OPENAI_KEY = ""
+
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
 
@@ -38,7 +40,7 @@ async function formatCode(text, editor, selection, selectedTextDecorationType) {
     headers: {
       "Content-Type": "application/json",
       Authorization:
-        "Bearer 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",
+        "Bearer " + OPENAI_KEY,
     },
   })
     .then((response) => {
