@@ -9,6 +9,7 @@ VScode plugin that reviews our code and helps us improve with the naming convent
 
 - Install the plugin.
 
+- Add Gemini Api key by typing `cmd + shift + p` & then search for `Set Gemini Api Key` and add the key, click `Enter`
 - Select the function or specific part of the code that you want it to review.
 - Type cmd + shift + p (mac users)
 - Type ctrl + shift + p (windows users)
