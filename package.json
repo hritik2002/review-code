@@ -15,7 +15,9 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:review-code.helloWorld"
+    "onCommand:review-code.helloWorld",
+    "onCommand:extension.setGeminiApiKey",
+    "onGit:refresh"
   ],
   "main": "./extension.js",
   "contributes": {
@@ -27,7 +29,11 @@
       {
         "command": "extension.setGeminiApiKey",
         "title": "Set Gemini API Key"
-      }
+      },
+      {
+        "command": "review-code.reviewGitDiff",
+        "title": "AI Review"
+    }
     ],
     "configuration": {
       "type": "object",
@@ -59,6 +65,7 @@
   },
   "dependencies": {
     "@google/generative-ai": "^0.16.0",
-    "axios": "^1.3.3"
+    "axios": "^1.3.3",
+    "path": "^0.12.7"
   }
 }
